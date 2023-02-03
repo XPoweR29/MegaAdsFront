@@ -11,16 +11,6 @@ header h1 {
   font-weight: normal;
 }
 
-button {
-  border: none;
-  background-color: rgb(14, 133, 14);
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 2px 35px;
-  border-radius: 2px;
-}
-
 .search {
   display: flex;
 }
@@ -28,9 +18,4 @@ button {
 .search input {
   width: 13em;
   margin-right: 5px;
-}
-
-.map {
-  height: calc(100vh - 47px);
-  background-color: grey;
 }
