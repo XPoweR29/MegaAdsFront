@@ -1,4 +1,4 @@
-button {
+button, .btn {
   border: none;
   background-color: rgb(14, 133, 14);
   color: white;
@@ -8,7 +8,7 @@ button {
   border-radius: 2px;
 }
 
-button:hover {
+button:hover, .btn:hover {
   cursor: pointer;
   background-color: rgb(14, 114, 16);
   transition: .1s;

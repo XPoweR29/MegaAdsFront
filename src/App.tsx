@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { AddForm } from './components/AddForm/AddForm';
 import { Header } from './components/layout/Header/Header';
 import { Map } from './components/layout/Map/Map';
 import { SearchContext } from './contexts/search.context';
@@ -9,7 +11,10 @@ export const App = () => {
   return <>
     <SearchContext.Provider value={{search, setSearch}}>
       <Header/> 
-      <Map/>
+      <Routes>
+        <Route path='/' element={<Map/>}/>
+        <Route path='/add' element={<AddForm/>}/>
+      </Routes>
     </SearchContext.Provider>
   </>
 }
